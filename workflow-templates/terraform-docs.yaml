@@ -1,0 +1,22 @@
+---
+name: Terraform Docs
+on:
+  pull_request:
+    branches:
+    - $default-branch
+jobs:
+  docs:
+    name: Render Terraform documentation
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        ref: ${{ github.event.pull_request.head.ref }}
+    - name: Render terraform documentation
+      uses: terraform-docs/gh-actions@v1.3.0
+      with:
+        config-file: .terraform-docs.yaml
+        git-commit-message: "docs: render documentation"
+        git-push: true

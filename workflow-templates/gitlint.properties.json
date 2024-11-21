@@ -1,0 +1,12 @@
+{
+  "name": "Gitlint",
+  "description": "Validate commit messages against some configured rules.",
+  "iconName": "octicons git-commit",
+  "categories": [
+    "continuous-integration",
+    "git"
+  ],
+  "filePatterns": [
+    ".gitlint"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Terraform Docs",
+  "description": "Render documentation from Terraform modules and publish it back to the repository.",
+  "iconName": "octicons book",
+  "categories": [
+    "continuous-integration",
+    "terraform"
+  ],
+  "filePatterns": [
+    ".terraform-docs.yaml",
+    ".terraform-docs.yml"
+  ]
+}

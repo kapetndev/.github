@@ -1,0 +1,9 @@
+{
+  "name": "Terraform",
+  "description": "Validate Terraform configuration files.",
+  "iconName": "octicons file-code",
+  "categories": [
+    "continuous-integration",
+    "terraform"
+  ]
+}
